@@ -1,0 +1,84 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.bg {
+    position: absolute;
+    top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+#galeria {
+
+    max-width: 80%;
+    line-height: 0;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 5px;
+    -moz-column-count: 5;
+    -moz-column-gap: 5px;
+    column-count: 5;
+    column-gap: 5px;
+}
+
+#galeria img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    filter: grayscale(100%);
+    transition: all 0.7s ease-in-out;
+}
+
+.bg #galeria .imagenes:hover {
+    position: relative;
+    z-index: 2;
+    transform: scale(1.5);
+    transition: all 0.7s ease-in-out;
+    filter: grayscale(0%);
+}
+
+/* distintos breakpoints para setear la cantidad de columnas de acuerdo al ancho */
+@media (max-width: 1200px) {
+    #galeria {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+}
+
+@media (max-width: 1000px) {
+    #galeria {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+
+@media (max-width: 800px) {
+    #galeria {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 400px) {
+    #galeria {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+    .bg #galeria .imagenes:hover {
+        position: relative;
+        z-index: 2;
+        transform: scale(1.2);
+        transition: all 0.7s ease-in-out;
+        filter: grayscale(0%);
+    }
+}

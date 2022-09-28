@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Austin Autos </title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+<!--Nav bar HTML-->
+<nav class="navbar">
+    <div class="navbar-container container">
+        <input type="checkbox"/>
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+            <li><a href="index.html#hero">Inicio</a></li>
+            <li><a href="index.html#info">Informacion</a></li>
+            <li><a href="index.html#vehiculos">Vehiculos</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!--Seccion Hero-->
+<section class="hero-area" id="hero">
+    <div class="hero-container">
+        <h1 class="main-title" id="inicio">Austin Automoviles</h1>
+        <p>Encontrá tu próximo auto y el mejor asesoramiento del pais.</p>
+        <a href="#contacto" class="btn btn-primary">Contacto</a>
+    </div>
+</section>
+
+<!--Seccion Info-->
+<section id="info">
+    <div class="info-contacto container">
+        <div class="info-texto">
+            <p class="small">Información</p>
+            <h2>Mas de 15 años de trayectoria y dedicación en la venta de vehículos</h2>
+            <p>
+                Encontrá tu próximo Auto en <b>Austin Automoviles</b>. Comprá 100% en línea, comparando precios y diferentes versiones de autos. ¡Encontrá tu próximo auto!
+            </p>
+        </div>
+        <div class="info-img">
+            <img src="img/logo.png" alt="logo-austin"/>
+        </div>
+    </div>
+</section>
+
+<!--Seccion Vehiculos-->
+<section id="vehiculos">
+    <h2 class="vehiculos-tit">Vehiculos</h2>
+    <p class="small">Vehiculos que comercializamos</p>
+    <div class="vehiculos-container container">
+        <div class="vehiculos-type">
+            <div class="img-container">
+                <img src="img/camioneta.jpg"
+                     alt="Camioneta"/>
+                <div class="contenido-img">
+                    <h3>Camionetas</h3>
+                    <a href="https://es.wikipedia.org/wiki/Camioneta" class="btn btn-secondary" target="blank">Mas info</a>
+                </div>
+            </div>
+        </div>
+        <div class="vehiculos-type">
+            <div class="img-container">
+                <img src="img/auto.jpg" alt="Auto"/>
+                <div class="contenido-img">
+                    <h3>Autos</h3>
+                    <a href="https://es.wikipedia.org/wiki/Auto" class="btn btn-secondary" target="blank">Mas
+                        info</a>
+                </div>
+            </div>
+        </div>
+        <div class="vehiculos-type">
+            <div class="img-container">
+                <img src="img/Utilitarios.jpg" alt="Utilitarios"/>
+                <div class="contenido-img">
+                    <h3>Utilitarios</h3>
+                    <a href="https://es.wikipedia.org/wiki/Utilitarios" class="btn btn-secondary" target="blank">Mas
+                        info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Seccion Contacto-->
+<section id="contacto">
+    <div class="contact-container container">
+        <div class="contact-img">
+            <img src="img/maxresdefault.jpg" alt="Perro con telefono"/>
+        </div>
+
+        <form class="form-container" method="get" action="index.html">
+            <h2>Contactanos</h2>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido"/>
+            <input type="email" name="email" id="email" placeholder="E-Mail"/>
+            <textarea name="mensaje" id="mensaje"
+                      cols="30"
+                      rows="6"
+                      placeholder="Mensaje"
+            ></textarea>
+            <input type="submit" class="btn btn-primary" value="ENVIAR" onclick="return ValidarForm();">
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

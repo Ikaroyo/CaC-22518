@@ -1,0 +1,449 @@
+:root{
+    --p-color:#171717;
+    --s-color:#444444;
+    --t-color:#DA0037;
+    --c-color:#EDEDED;
+    --t-color-hover: #da466c;
+}
+/* ----- section Hero ----- */
+.hero-area {
+    height: 50vh;
+    background: linear-gradient(
+            rgba(240, 240, 240, 0.144),
+            rgba(255, 255, 255, 0.336)
+    ),
+    url('../img/hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.main-title {
+    text-transform: uppercase;
+    margin-top: 1.5em;
+    color: var(--p-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn,form input[type="submit"] {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+.btn-primary, form input[type="submit"] {
+    color: var(--c-color);
+    background: var(--t-color);
+}
+
+.btn-primary:hover,form input[type="submit"]:hover {
+    background: var(--t-color-hover);
+    /* animation  */
+    animation: pulse 1s infinite;
+    transition: background 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* ----- section info ----- */
+
+
+#info {
+    height: auto;
+    padding: 50px 0;
+    background: var(--p-color);
+}
+
+.info-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#info h2 {
+    color: var(--t-color);
+    font-size: 2.3rem;
+}
+
+#info p {
+    font-size: 1.2rem;
+    color: var(--c-color);
+}
+
+#info .small {
+    font-size: 1.2rem;
+    color: var(--c-color);
+    font-weight: 600;
+}
+
+.info-img {
+    padding: 30px;
+    transform: translateX(150%);
+    animation: info-img-animacion 1s ease-in-out forwards;
+}
+
+@keyframes info-img-animacion {
+    100% {
+        transform: translate(0);
+    }
+}
+
+.info-texto {
+    flex: 1 1 400px;
+    padding: 30px;
+    margin: auto;
+    transform: translate(-150%);
+    animation: info-texto-animacion 1s ease-in-out forwards;
+}
+
+@keyframes info-texto-animacion {
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+.info-img img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+}
+
+
+
+/* ----- seccion comidas ----- */
+
+#vehiculos {
+    height: auto;
+    padding: 5rem 0 10rem 0;
+    background: var(--s-color);
+}
+
+
+
+#vehiculos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: var(--c-color);
+}
+
+.vehiculos-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.vehiculos-container img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5%;
+}
+
+.img-container {
+    margin: 0 1rem;
+    position: relative;
+}
+
+#vehiculos p {
+    display: flex;
+    font-size: 1.2rem;
+    color: var(--c-color);
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#vehiculos .small {
+    font-size: 1.2rem;
+    color: var(--c-color);
+    font-weight: 600;
+}
+
+.contenido-img {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 2;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0.1s;
+
+}
+
+.contenido-img h3 {
+    color: var(--c-color);
+    font-size: 2.2rem;
+    padding-top: 20px;
+}
+
+.contenido-img a {
+    font-size: 1.2rem;
+}
+
+.img-container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.871);
+    opacity: 0;
+    z-index: 1;
+    border-radius: 5%;
+    transform: scaleY(0);
+    transform-origin: 100% 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-container:hover::after {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.img-container:hover .contenido-img {
+    opacity: 1;
+    top: 40%;
+}
+
+
+
+.btn.btn-secondary {
+    color: var(--c-color);
+    background: var(--t-color);
+    font-size: 0.8rem;
+
+}
+
+.btn.btn-secondary:hover {
+    background: var(--t-color-hover);
+    transition: background 0.3s ease-in-out;
+}
+
+
+
+/* ----- seccion contacto ----- */
+
+#contacto {
+    position: relative;
+    padding: 5rem 0;
+    background: var(--p-color);
+}
+
+.contact-container {
+    display: flex;
+    background: var(--s-color);
+}
+
+.contact-img {
+    width: 50%;
+}
+
+.contact-img img {
+    display: block;
+    height: 400px;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.form-container {
+    padding: 1rem;
+    width: 50%;
+    margin-top: 1%;
+}
+
+.form-container input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--t-color);
+    padding: 1rem;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 1rem;
+    color: var(--p-color);
+    font-weight: 500;
+}
+
+.form-container textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid var(--t-color);
+    color: #444;
+    outline: none;
+    padding: 1rem;
+    resize: none;
+}
+
+.form-container h2 {
+    font-size: 2.7rem;
+    font-weight: 500;
+    color: var(--c-color);
+    margin-bottom: 1rem;
+    margin-top: -1.2rem;
+}
+
+.form-container a {
+    font-size: 1.3rem;
+}
+
+
+
+/* ----- Media queries ----- */
+
+@media (max-width: 768px) {
+
+    #info h2 {
+        font-size: 1.2rem;
+    }
+
+    #info p {
+        font-size: 1rem;
+    }
+    .btn.btn-secondary {
+        color: var(--c-color);
+        background: var(--t-color);
+        font-size: 0.8rem;
+
+    }
+
+    .btn.btn-secondary:hover {
+        background: var(--t-color-hover);
+        transition: background 0.3s ease-in-out;
+    }
+
+}
+
+@media (max-width: 620px) {
+
+    .info-contacto {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .info-img img{
+        width: 50%;
+    }
+
+    section#info {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid var(--t-color);
+    }
+    #info{
+
+    }
+
+    .info-img {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .info-texto {
+    flex: 1 1 auto;
+    }
+
+    .info-contacto {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    section#vehiculos {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        margin: 0;
+        padding: 10px;
+    }
+
+    #vehiculos{
+        border-top: 1px solid var(--t-color);
+    }
+
+    #vehiculos p {
+        margin: 5%;
+    }
+
+    .vehiculos-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        align-items: stretch;
+    }
+    #vehiculos h2{
+        font-size: 1.2rem;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    #vehiculos>h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    #contacto{
+        border-top: 1px solid var(--t-color);
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-img {
+        width: 100%;
+        height: auto;
+        margin: 3rem auto;
+    }
+}
