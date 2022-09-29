@@ -1,84 +1,145 @@
-body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+body{
+    background-color: var(--p-color);
+    display: flex;
+    justify-content: center;
 }
-
-.bg {
+.bg{
     position: absolute;
     top: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-
 }
-
-#galeria {
-
-    max-width: 80%;
-    line-height: 0;
-    -webkit-column-count: 5;
-    -webkit-column-gap: 5px;
-    -moz-column-count: 5;
-    -moz-column-gap: 5px;
-    column-count: 5;
-    column-gap: 5px;
-}
-
-#galeria img {
+.gallery-container{
+    display: flex;
+    max-width: 1680px;
     width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-container img{
+    height: 20vh;
+    max-width: 10vh;
+    min-width: 30vh;
+    object-fit: cover;
+    object-position:center;
+    padding: 5px;
+}
+
+
+.gallery-container img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.7s ease-in-out;
+
+}
+
+.popup.active {
+    display: block;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+
+
+.popup.active img {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto;
+    border: 2vw solid var(--c-color);
+}
+
+.popup-img{
+    display: block;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
     height: auto;
-    margin-bottom: 5px;
-    filter: grayscale(100%);
+    max-height: 80vh;
+    background-color: var(--p-color);
+}
+
+#button-carrousel-l, #button-carrousel-r{
+    display: none;
+}
+
+#button-carrousel-l.activeb {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 0vh;
+    background-image: url("../img/left.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 5rem;
+    height: 5rem;
+cursor: pointer;
+    z-index: 11;
+}
+#button-carrousel-l.activeb:hover {
+    cursor: pointer;
     transition: all 0.7s ease-in-out;
+    animation: bounceleft 0.5s ease-in-out infinite;
 }
 
-.bg #galeria .imagenes:hover {
-    position: relative;
-    z-index: 2;
-    transform: scale(1.5);
+@keyframes bounceleft {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+#button-carrousel-r.activeb {
+    display: block;
+    position: fixed;
+    top: 50%;
+    right: 0vh;
+    background-image: url("../img/right.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+    z-index: 11;
+}
+#button-carrousel-r.activeb:hover {
+    cursor: pointer;
     transition: all 0.7s ease-in-out;
-    filter: grayscale(0%);
+    animation: bounceleft 0.5s ease-in-out infinite;
 }
 
-/* distintos breakpoints para setear la cantidad de columnas de acuerdo al ancho */
-@media (max-width: 1200px) {
-    #galeria {
-        -moz-column-count: 4;
-        -webkit-column-count: 4;
-        column-count: 4;
+@keyframes bounceright {
+    0% {
+        transform: translateX(0);
     }
-}
-
-@media (max-width: 1000px) {
-    #galeria {
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
-        column-count: 3;
+    50% {
+        transform: translateX(10px);
     }
-}
-
-@media (max-width: 800px) {
-    #galeria {
-        -moz-column-count: 2;
-        -webkit-column-count: 2;
-        column-count: 2;
-    }
-}
-
-@media (max-width: 400px) {
-    #galeria {
-        -moz-column-count: 1;
-        -webkit-column-count: 1;
-        column-count: 1;
-    }
-    .bg #galeria .imagenes:hover {
-        position: relative;
-        z-index: 2;
-        transform: scale(1.2);
-        transition: all 0.7s ease-in-out;
-        filter: grayscale(0%);
+    100% {
+        transform: translateX(0);
     }
 }

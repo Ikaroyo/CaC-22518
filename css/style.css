@@ -358,6 +358,11 @@
 
 @media (max-width: 620px) {
 
+    h1{
+        text-align: center;
+    }
+
+
     .info-contacto {
         display: flex;
         flex-direction: column-reverse;

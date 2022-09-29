@@ -32,7 +32,7 @@ body {
 }
 
 .navbar {
-    box-shadow: 0 5px 10px 0 #aaa;
+    box-shadow: 0 5px 10px 0 var(--t-color);
     position: fixed;
     width: 100%;
     background: var(--p-color);
