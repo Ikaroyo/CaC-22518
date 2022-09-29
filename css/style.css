@@ -273,6 +273,7 @@
 .contact-container {
     display: flex;
     background: var(--s-color);
+    width: 100%;
 }
 
 .contact-img {
@@ -283,6 +284,7 @@
     display: block;
     height: 400px;
     width: 100%;
+    height: 100%;
     object-position: center;
     object-fit: cover;
 }
@@ -438,7 +440,8 @@
     }
 
     #contacto{
-        border-top: 1px solid var(--t-color);
+    border-top: 1px solid var(--t-color);
+    padding-top: 2vw;
     }
 
     .contact-container {
