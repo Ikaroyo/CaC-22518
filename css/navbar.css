@@ -18,6 +18,26 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* styled scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--p-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--t-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--t-color-hover);
+}
+
+
+
+
 .container {
     max-width: 1200px;
     width: 90%;

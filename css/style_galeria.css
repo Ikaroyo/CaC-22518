@@ -1,19 +1,18 @@
-body{
+section#galeria {
+    padding-top: 80px;
+    padding-bottom: 80px;
     background-color: var(--p-color);
-    display: flex;
-    justify-content: center;
+
 }
-.bg{
-    position: absolute;
-    top: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
+/*.bg-galeria{*/
+/*    top: 60px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    overflow: hidden;*/
+/*}*/
 .gallery-container{
     display: flex;
-    max-width: 1680px;
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
@@ -26,7 +25,10 @@ body{
     min-width: 30vh;
     object-fit: cover;
     object-position:center;
-    padding: 5px;
+    margin: 5px;
+    border: 5px solid var(--c-color);
+
+
 }
 
 
@@ -98,7 +100,9 @@ cursor: pointer;
     transition: all 0.7s ease-in-out;
     animation: bounceleft 0.5s ease-in-out infinite;
 }
-
+.oculta{
+    display: none;
+}
 @keyframes bounceleft {
     0% {
         transform: translateX(0);
@@ -132,6 +136,34 @@ cursor: pointer;
     animation: bounceleft 0.5s ease-in-out infinite;
 }
 
+.btn-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+}
+.btn-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: var(--c-color);
+    background-color: rgba(255, 255, 255, 0);
+    border-left: 1px solid var(--t-color);
+    border-right: 1px solid var(--t-color);
+}
+
+.btn-gallery:hover, .btn-gallery.selected {
+    background: var(--t-color);
+    animation: pulse 1s infinite;
+    transition: background 0.5s ease-in-out;
+}
+
 @keyframes bounceright {
     0% {
         transform: translateX(0);
@@ -141,5 +173,24 @@ cursor: pointer;
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@media (max-width: 620px) {
+    .gallery-container{
+        display: flex;
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery-container img{
+
+        height: auto;
+        max-width: 10vh;
+        min-width: 100%;
+        object-fit: cover;
+        object-position: center;
+        padding: 5px;
     }
 }

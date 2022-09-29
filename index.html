@@ -9,6 +9,8 @@
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_galeria.css">
+    <script src="js/script_galeria.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -25,8 +27,7 @@
             <li><a href="index.html#hero">Inicio</a></li>
             <li><a href="index.html#info">Informacion</a></li>
             <li><a href="index.html#vehiculos">Vehiculos</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="index.html#galeria">Galeria</a></li>
             <li><a href="index.html#contacto">Contacto</a></li>
         </ul>
     </div>
@@ -48,7 +49,8 @@
             <p class="small">Información</p>
             <h2>Mas de 15 años de trayectoria y dedicación en la venta de vehículos</h2>
             <p>
-                Encontrá tu próximo Auto en <b>Austin Automoviles</b>. Comprá 100% en línea, comparando precios y diferentes versiones de autos. ¡Encontrá tu próximo auto!
+                Encontrá tu próximo Auto en <b>Austin Automoviles</b>. Comprá 100% en línea, comparando precios y
+                diferentes versiones de autos. ¡Encontrá tu próximo auto!
             </p>
         </div>
         <div class="info-img">
@@ -68,7 +70,7 @@
                      alt="Camioneta"/>
                 <div class="contenido-img">
                     <h3>Camionetas</h3>
-                    <a href="https://es.wikipedia.org/wiki/Camioneta" class="btn btn-secondary" target="blank">Mas info</a>
+                    <button onclick="iframeRun('camioneta')" class="btn btn-secondary">Mas info</button>
                 </div>
             </div>
         </div>
@@ -77,8 +79,7 @@
                 <img src="img/auto.jpg" alt="Auto"/>
                 <div class="contenido-img">
                     <h3>Autos</h3>
-                    <a href="https://es.wikipedia.org/wiki/Auto" class="btn btn-secondary" target="blank">Mas
-                        info</a>
+                    <button onclick="iframeRun('auto')" class="btn btn-secondary">Mas info</button>
                 </div>
             </div>
         </div>
@@ -87,12 +88,43 @@
                 <img src="img/Utilitarios.jpg" alt="Utilitarios"/>
                 <div class="contenido-img">
                     <h3>Utilitarios</h3>
-                    <a href="https://es.wikipedia.org/wiki/Utilitarios" class="btn btn-secondary" target="blank">Mas
-                        info</a>
+                    <button onclick="iframeRun('utilitario')" class="btn btn-secondary">Mas info</button>
                 </div>
             </div>
         </div>
     </div>
+    <div id="iframe-container" onclick="iframeClose()">
+        <iframe src="" id="iframe-info"></iframe>
+    </div>
+
+</section>
+
+<section id="galeria">
+    <h2>Galeria de vehiculos</h2>
+    <div class="btn-holder">
+        <button id="btn-camioneta" class="btn-gallery" onclick="loadImages('camioneta')">Carmionetas</button>
+        <button id="btn-auto" class="btn-gallery" onclick="loadImages('auto')">Autos</button>
+        <button id="btn-utilitario" class="btn-gallery" onclick="loadImages('utilitario')">Utilitarios</button>
+
+    </div>
+
+    <div class="bg-galeria">
+        <div id="button-carrousel-l" onclick="carrouselMove(-1)"></div>
+        <div id="button-carrousel-r" onclick="carrouselMove(1)"></div>
+
+        <div class="popup" id="popup" onclick="inactivePopup()">
+
+        </div>
+
+        <!--Carrusel-->
+        <div class="gallery-container" id="gallery-container">
+
+        </div>
+    </div>
+
+
+
+
 </section>
 
 <!--Seccion Contacto-->
