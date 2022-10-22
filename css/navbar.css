@@ -1,3 +1,5 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 :root{
     --p-color:#171717;
     --s-color:#444444;
@@ -12,10 +14,13 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+
+    font-size: 1rem;
 }
 
 /* styled scrollbar */
@@ -52,7 +57,7 @@ body {
 }
 
 .navbar {
-    box-shadow: 0 5px 10px 0 var(--c-color);
+    box-shadow: 0 5px 10px 0 var(--t-color);
     position: fixed;
     width: 100%;
     background: var(--p-color);
@@ -93,7 +98,7 @@ body {
 
 .menu-items a:hover {
     color: var(--t-color-hover);
-    border-top: 2px solid var(--t-color-hover);
+    border-top: 2px solid var(--t-color);
     transition: color 0.3s ease-in-out;
 }
 

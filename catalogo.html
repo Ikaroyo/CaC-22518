@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Austin Autos - Catalogo</title>
+    <!--  Google Fonts -->
+    <!-- Poppins   -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style_catalogo.css">
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="js/script_catalogo.js"></script>
+
+</head>
+<body>
+
+<!--Nav bar HTML-->
+<nav class="navbar">
+    <div class="navbar-container container">
+        <input type="checkbox"/>
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+            <li><a href="index.html#hero">Inicio</a></li>
+            <li><a href="index.html#info">Informacion</a></li>
+            <li><a href="index.html#vehiculos">Vehiculos</a></li>
+            <li><a href="index.html#galeria">Galeria</a></li>
+            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<section id="vehiculos">
+
+    <form action="javascript:void(0);" >
+        <label for="make">Empresa</label>
+        <input type="text" id="make" placeholder="Empresa" onkeyup="chargeAgain()" autofocus>
+
+
+        <label for="model">Modelo</label>
+        <input type="text" id="model" placeholder="Modelo" onkeyup="chargeAgain()">
+        <label for="year">Año</label>
+        <input type="text" id="year" placeholder="Año" onkeyup="chargeAgain()">
+
+        <button onclick="limpiar()">Limpiar</button>
+    </form>
+
+    <table id="table">
+        <tr>
+            <th>Nº</th>
+            <th>Empresa</th>
+            <th>Modelo</th>
+            <th>Año</th>
+            <th>Precio</th>
+        </tr>
+
+        <tr id="template">
+            <td class="number"></td>
+            <td class="make"></td>
+            <td class="model"></td>
+            <td class="year"></td>
+            <td class="price"><div class="valor"></div></td>
+        </tr>
+
+    </table>
+
+    <div class="loading" id="loading">
+        <hr>
+    </div>
+</section>
+
+
+</body>
+</html>
