@@ -14,61 +14,69 @@ Este repositorio contiene el código fuente de la página web del curso de Codo 
 
 ## Breve descripción:
 Es una página estilo one-page que además cuenta con una página separada donde se puede ver la simulación de un catálogo de vehículos que se encuentran a la venta con una serie de filtros para poder encontrar el vehículo deseado.
-
-
+  
 ![img.png](ScreensReader/index.png)
+  
+# Páginas
 
 ## Página principal:
- Cuenta con las siguientes secciones:
-  - Hero
-  - Información
-  - Vehículos
-  - Galeria
-  - Contacto
+### Secciones:
+
+    - Hero
+    - Información
+    - Vehículos
+    - Galeria
+    - Contacto
   
 
 ## Pagina de catalogo:
-  - Formulario de busqueda
-  - Resultado de busqueda
+### Secciones:
+
+    - Formulario de busqueda
+    - Resultado de busqueda
 
 
-### Breakpoints:
+## Breakpoints:
 
     - 576px
     - 768px
     - 992px
 
 
-### Icons:
-  - icons8.com
+## Icons:
 
 
-### Fonts:
-  - Google Fonts (Poppins para la pagina en general y Cinzel para el navbar)
+    - icons8.com
 
 
-### Navbar 
-- menú desplegable para dispositivos móviles.
+## Fonts:
+
+    - Google Fonts (Poppins para la pagina en general y Cinzel para el navbar)
+
+
+## Navbar
+
+    - menú desplegable para dispositivos móviles.
 
 ![img.png](ScreensReader/navbar-mobile.png)
 
 
-### Catálogo 
-- filtra vehículos mientras se escribe en el input de búsqueda.
+## Catálogo 
+
+    - filtra vehículos mientras se escribe en el input de búsqueda.
 
 ![img_1.png](ScreensReader/catalogo.png)
 
 
-### iframes 
-- contienen videos de youtube en la sección vehículos.
+## iframes 
+
+    - contienen videos de youtube en la sección vehículos.
 
 ![img.png](ScreensReader/iframe.png)
 
 
-### Carrusel de imágenes: 
-
-
-- En la sección galería.
+## Carrusel de imágenes: 
+ - En la sección galería.
 
 
 ![img.png](ScreensReader/Carroussel.png)
@@ -94,5 +102,7 @@ Es una página estilo one-page que además cuenta con una página separada donde
 - Se utilizan media queries para el manejo de los breakpoints.
 
 - Se utilizan etiquetas semánticas para el manejo de la información.
+
+- Scrollbar personalizada.
 
 - y mucho más...
