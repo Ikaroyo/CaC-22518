@@ -1,13 +1,12 @@
-<p align="center">
-<h1> CaC-22518 </h1>
-</p>
+
+# CaC-22518
+
 
     Codo a Codo - Comisión: 22518
 
   
 <p align="center">
 Web: <a href="https://ikaroyo.github.io/CaC-22518/">Link</a>
-
 </p>
 
 ## Descripción
@@ -67,33 +66,33 @@ Web: <a href="https://ikaroyo.github.io/CaC-22518/">Link</a>
 
     - menú desplegable para dispositivos móviles.
 
-<div style="text-align: center;">
+<p align="center">
     <img src="markdown-src/navbar.gif" alt="Navbar">
-</div>
+</p>
 
 ## Catálogo
 
     - Vehículos filtrables mientras se escribe en el input de búsqueda.
 
-<div style="text-align: center;">
+<p align="center">
     <img src="markdown-src/catalogo.gif" alt="Catalogo">
-</div>
+</p>
 
 ## iframes
 
     - contienen videos de youtube en la sección vehículos.
 
-<div style="text-align: center;">
+<p align="center">
     <img src="markdown-src/iframe.gif" alt="Iframes">
-</div>
+</p>
 
 ## Carrusel de imágenes
 
     - En la sección galería.
 
-<div style="text-align: center;">
+<p align="center">
     <img src="markdown-src/Carousel.gif" alt="Carrusel">
-</div>
+</p>
 
 ## Otras características
 
