@@ -22,7 +22,7 @@ Web: [Link](https://ikaroyo.github.io/CaC-22518/catalogo.html)
     donde se puede ver la simulación de un catálogo de vehículos que se encuentran
     a la venta con una serie de filtros para poder encontrar el vehículo deseado.
 
-<div style="text-align: center;">
+<div style="text-align: center; item-align:center;">
     <img src="markdown-src/index-small.png" alt="Preview">
 </div>
 
