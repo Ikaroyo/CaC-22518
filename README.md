@@ -100,7 +100,7 @@ Web: <a href="https://ikaroyo.github.io/CaC-22518/">Link</a>
     <a href="https://vehiculos-2b1d3-default-rtdb.firebaseio.com/vehiculos.json">Link</a>   
 </p>
 
-    - Se creó una base de datos de más de 7000 vehículos y se utiliza para guardar los datos de estos.
+    - Se creó una base de datos de más de 7000 vehículos y se utiliza para guardar los datos utilizados en el catalogo.
   
 ## Otras características
 
