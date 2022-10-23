@@ -1,12 +1,17 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
 :root{
     --p-color:#171717;
     --s-color:#444444;
     --t-color:#DA0037;
     --c-color:#EDEDED;
     --t-color-hover: #e0174b;
+
+    /* Prevenir movimientos en x fuera de la pantalla */
+    overflow-x: hidden;
 }
+
 
 *,
 *::after,
@@ -23,7 +28,7 @@ body {
     font-size: 1rem;
 }
 
-/* styled scrollbar */
+/* Estilo scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -205,7 +210,7 @@ body {
 
 }
 
-@media (max-width: 620px) {
+@media (max-width: 576px) {
     .navbar .menu-items li {
         font-size: 1.6rem;
     }

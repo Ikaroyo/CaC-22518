@@ -1,11 +1,12 @@
-:root{
-    --p-color:#171717;
-    --s-color:#444444;
-    --t-color:#DA0037;
-    --c-color:#EDEDED;
+:root {
+    --p-color: #171717;
+    --s-color: #444444;
+    --t-color: #DA0037;
+    --c-color: #EDEDED;
     --t-color-hover: #da466c;
 }
-/* ----- section Hero ----- */
+
+/* ----- Seccion Hero ----- */
 .hero-area {
     height: 50vh;
     background: linear-gradient(
@@ -36,7 +37,7 @@
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.btn,form input[type="submit"] {
+.btn, form input[type="submit"] {
     display: inline-block;
     padding: 0.5em 1.5em;
     text-decoration: none;
@@ -49,13 +50,12 @@
 }
 
 
-
 .btn-primary, form input[type="submit"] {
     color: var(--c-color);
     background: var(--t-color);
 }
 
-.btn-primary:hover,form input[type="submit"]:hover {
+.btn-primary:hover, form input[type="submit"]:hover {
     background: var(--t-color-hover);
     /* animation  */
     animation: pulse 1s infinite;
@@ -75,7 +75,7 @@
 }
 
 
-/* ----- section info ----- */
+/* ----- Seccion info ----- */
 
 
 #info {
@@ -142,15 +142,13 @@
 }
 
 
-
-/* ----- seccion vehiculos ----- */
+/* ----- Seccion vehiculos ----- */
 
 #vehiculos {
     height: auto;
     padding: 5rem 0 10rem 0;
     background: var(--s-color);
 }
-
 
 
 #vehiculos h2, #galeria h2 {
@@ -264,10 +262,9 @@
 
 #iframe-container.active iframe {
     display: block;
-        border: none;
+    border: none;
 
 }
-
 
 
 .btn.btn-secondary {
@@ -282,8 +279,7 @@
 }
 
 
-
-/* ----- seccion contacto ----- */
+/* ----- Seccion contacto ----- */
 
 #contacto {
     position: relative;
@@ -330,14 +326,13 @@
     font-weight: 500;
 
 }
+
 .form-container input[type="text"], .form-container input[type="email"] {
-font-weight: bold;
+    font-weight: bold;
 }
 
 .form-container input[type="text"]:focus, .form-container input[type="email"]:focus, .form-container textarea:focus {
-   /* scale 1.1 */
     transform: scale(1.05);
-
 }
 
 .form-container textarea {
@@ -353,6 +348,9 @@ font-weight: bold;
 }
 
 .form-container h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2.7rem;
     font-weight: 500;
     color: var(--c-color);
@@ -374,6 +372,13 @@ font-weight: bold;
 
 /* ----- Media queries ----- */
 
+@media (max-width: 992px) {
+    .form-container h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}
+
 @media (max-width: 768px) {
 
     #info h2 {
@@ -383,6 +388,7 @@ font-weight: bold;
     #info p {
         font-size: 1rem;
     }
+
     .btn.btn-secondary {
         color: var(--c-color);
         background: var(--t-color);
@@ -397,9 +403,9 @@ font-weight: bold;
 
 }
 
-@media (max-width: 620px) {
+@media (max-width: 576px) {
 
-    h1{
+    h1 {
         text-align: center;
     }
 
@@ -409,7 +415,7 @@ font-weight: bold;
         flex-direction: column-reverse;
     }
 
-    .info-img img{
+    .info-img img {
         width: 50%;
     }
 
@@ -420,7 +426,8 @@ font-weight: bold;
         padding: 0;
         border-top: 1px solid var(--t-color);
     }
-    #info{
+
+    #info {
 
     }
 
@@ -432,7 +439,7 @@ font-weight: bold;
     }
 
     .info-texto {
-    flex: 1 1 auto;
+        flex: 1 1 auto;
     }
 
     .info-contacto {
@@ -450,7 +457,7 @@ font-weight: bold;
         padding: 10px;
     }
 
-    #vehiculos{
+    #vehiculos {
         border-top: 1px solid var(--t-color);
     }
 
@@ -465,22 +472,25 @@ font-weight: bold;
         gap: 1rem;
         align-items: stretch;
     }
-    #vehiculos h2{
+
+    #vehiculos h2 {
         font-size: 1.5rem;
         margin-top: 20px;
         margin-bottom: 0;
     }
-    #galeria h2{
+
+    #galeria h2 {
         font-size: 1.5rem;
         margin-bottom: 40px;
     }
+
     .form-container {
         width: 100%;
     }
 
-    #contacto{
-    border-top: 1px solid var(--t-color);
-    padding-top: 0vw;
+    #contacto {
+        border-top: 1px solid var(--t-color);
+        padding-top: 0vw;
     }
 
     .contact-container {
