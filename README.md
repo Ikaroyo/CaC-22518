@@ -5,7 +5,7 @@ Web:
 https://ikaroyo.github.io/CaC-22518/catalogo.html
 
 ## Descripción
-Este repositorio contiene el código fuente de la página web del curso de Codo a Codo 2021, Comisión 22518.
+Este repositorio contiene el código fuente de la página web del curso de Codo a Codo 2022, Comisión 22518.
 
 ## Características
 - HTML5
@@ -47,26 +47,36 @@ Es una página estilo one-page que además cuenta con una página separada donde
   - Google Fonts (Poppins para la pagina en general y Cinzel para el navbar)
 
 
-### Navbar con menú desplegable para dispositivos móviles.
+### Navbar 
+- menú desplegable para dispositivos móviles.
 
 ![img.png](ScreensReader/navbar-mobile.png)
 
 
-- El catálogo filtra vehículos mientras se escribe en el input de búsqueda.
+### Catálogo 
+- filtra vehículos mientras se escribe en el input de búsqueda.
 
 ![img_1.png](ScreensReader/catalogo.png)
 
 
-- Se muestran iframes que contienen videos de youtube en la sección vehículos.
+### iframes 
+- contienen videos de youtube en la sección vehículos.
 
 ![img.png](ScreensReader/iframe.png)
 
+
+### Carrusel de imágenes 
+- En la sección galería.
+
+![img.png](ScreensReader/Carroussel.png)
+
+## Otras características:
 
 
 - Animaciones tanto en la página principal como en la página de catálogo.
 
 
-- Paginas responsive.
+- Paginas totalmente responsiva.
 
 
 - Se utilizan tanto flex como grid para el diseño de la página.
@@ -80,7 +90,6 @@ Es una página estilo one-page que además cuenta con una página separada donde
 
 - Se utilizan media queries para el manejo de los breakpoints.
 
+- Se utilizan etiquetas semánticas para el manejo de la información.
 
-- Carrusel de imágenes en la sección galería.
-![img.png](ScreensReader/Carroussel.png)
-
+- y mucho más...
