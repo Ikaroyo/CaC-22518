@@ -1,10 +1,10 @@
-<center>
+<div style="text-align: center;">
 <h1> CaC-22518 </h1>
 
     Codo a Codo - Comisión: 22518
 
 Web: [Link](https://ikaroyo.github.io/CaC-22518/catalogo.html)
-</center>
+</div>
 
 ## Descripción
 
@@ -22,9 +22,9 @@ Web: [Link](https://ikaroyo.github.io/CaC-22518/catalogo.html)
     donde se puede ver la simulación de un catálogo de vehículos que se encuentran
     a la venta con una serie de filtros para poder encontrar el vehículo deseado.
 
-<center>
-    <img src="ScreensReader/index-small.png" alt="Preview">
-</center>
+<div style="text-align: center;">
+    <img src="markdown-src/index-small.png" alt="Preview">
+</div>
 
 # Páginas
 
@@ -63,33 +63,33 @@ Web: [Link](https://ikaroyo.github.io/CaC-22518/catalogo.html)
 
     - menú desplegable para dispositivos móviles.
 
-<center>
-    <img src="ScreensReader/navbar.gif" alt="Navbar">
-</center>
+<div style="text-align: center;">
+    <img src="markdown-src/navbar.gif" alt="Navbar">
+</div>
 
 ## Catálogo
 
     - Vehículos filtrables mientras se escribe en el input de búsqueda.
 
-<center>
-    <img src="ScreensReader/catalogo.gif" alt="Catalogo">
-</center>
+<div style="text-align: center;">
+    <img src="markdown-src/catalogo.gif" alt="Catalogo">
+</div>
 
 ## iframes
 
     - contienen videos de youtube en la sección vehículos.
 
-<center>
-    <img src="ScreensReader/iframe.gif" alt="Iframes">
-</center>
+<div style="text-align: center;">
+    <img src="markdown-src/iframe.gif" alt="Iframes">
+</div>
 
 ## Carrusel de imágenes
 
     - En la sección galería.
 
-<center>
-    <img src="ScreensReader/Carroussel.gif" alt="Carrusel">
-</center>
+<div style="text-align: center;">
+    <img src="markdown-src/Carousel.gif" alt="Carrusel">
+</div>
 
 ## Otras características
 
