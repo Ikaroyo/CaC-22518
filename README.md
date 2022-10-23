@@ -66,7 +66,10 @@ Es una página estilo one-page que además cuenta con una página separada donde
 
 
 ### Carrusel de imágenes 
+
+
 - En la sección galería.
+
 
 ![img.png](ScreensReader/Carroussel.png)
 
