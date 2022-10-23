@@ -2,7 +2,8 @@
   
     Codo a Codo - Comisión: 22518
   
-    Web: https://ikaroyo.github.io/CaC-22518/catalogo.html
+
+Web: [Link](https://ikaroyo.github.io/CaC-22518/catalogo.html)
 
 ## Descripción
   
