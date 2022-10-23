@@ -20,7 +20,7 @@
     donde se puede ver la simulación de un catálogo de vehículos que se encuentran
     a la venta con una serie de filtros para poder encontrar el vehículo deseado.
 
-![img.png](ScreensReader/index.png)
+[ ![](ScreensReader/index-small.png) ](ScreensReader/index-large.png)
   
 # Páginas
 
