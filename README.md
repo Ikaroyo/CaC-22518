@@ -1,31 +1,35 @@
-# CaC-22518
-  
+<center>
+<h1> CaC-22518 </h1>
+
     Codo a Codo - Comisión: 22518
-  
 
 Web: [Link](https://ikaroyo.github.io/CaC-22518/catalogo.html)
+</center>
 
 ## Descripción
-  
+
     Este repositorio contiene el código fuente de la página web del curso de Codo a Codo 2022, Comisión 22518.
 
 ## Tecnologias
-  
+
     - HTML5
     - CSS3
     - JavaScript
 
 ## Breve descripción
-  
+
     Es una página estilo one-page que además cuenta con una página separada 
     donde se puede ver la simulación de un catálogo de vehículos que se encuentran
     a la venta con una serie de filtros para poder encontrar el vehículo deseado.
 
-[ ![](ScreensReader/index-small.png) ](ScreensReader/index-large.png)
-  
+<center>
+    <img src="ScreensReader/index-small.png" alt="Preview">
+</center>
+
 # Páginas
 
 ## Página principal
+
 ### Secciones
 
     - Hero
@@ -33,14 +37,13 @@ Web: [Link](https://ikaroyo.github.io/CaC-22518/catalogo.html)
     - Vehículos
     - Galeria
     - Contacto
-  
 
 ## Pagina de catalogo
+
 ### Secciones
 
     - Formulario de busqueda
     - Resultado de busqueda
-
 
 ## Breakpoints
 
@@ -48,49 +51,48 @@ Web: [Link](https://ikaroyo.github.io/CaC-22518/catalogo.html)
     - 768px
     - 992px
 
-
 ## Icons
 
-
     - icons8.com
-
 
 ## Fonts
 
     - Google Fonts (Poppins para la pagina en general y Cinzel para el navbar)
 
-
 ## Navbar
 
     - menú desplegable para dispositivos móviles.
 
-![img.gif](ScreensReader/navbar.gif)
+<center>
+    <img src="ScreensReader/navbar.gif" alt="Navbar">
+</center>
 
-
-## Catálogo 
+## Catálogo
 
     - Vehículos filtrables mientras se escribe en el input de búsqueda.
 
-![img.gif](ScreensReader/catalogo.gif)
+<center>
+    <img src="ScreensReader/catalogo.gif" alt="Catalogo">
+</center>
 
-
-## iframes 
+## iframes
 
     - contienen videos de youtube en la sección vehículos.
 
-![img.gif](ScreensReader/iframe.gif)
-
+<center>
+    <img src="ScreensReader/iframe.gif" alt="Iframes">
+</center>
 
 ## Carrusel de imágenes
-  
+
     - En la sección galería.
 
-
-![img.gif](ScreensReader/Carroussel.gif)
-
+<center>
+    <img src="ScreensReader/Carroussel.gif" alt="Carrusel">
+</center>
 
 ## Otras características
-  
+
     - Animaciones tanto en la página principal como en la página de catálogo.
 
     - Paginas totalmente responsiva.
