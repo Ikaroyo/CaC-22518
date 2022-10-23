@@ -65,7 +65,7 @@ Es una página estilo one-page que además cuenta con una página separada donde
 ![img.png](ScreensReader/iframe.png)
 
 
-### Carrusel de imágenes 
+### Carrusel de imágenes: 
 
 
 - En la sección galería.
