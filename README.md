@@ -1,10 +1,14 @@
-<div style="text-align: center;">
+<p align="center">
 <h1> CaC-22518 </h1>
+</p>
 
     Codo a Codo - Comisión: 22518
 
-Web: [Link](https://ikaroyo.github.io/CaC-22518/catalogo.html)
-</div>
+  
+<p align="center">
+Web: <a href="https://ikaroyo.github.io/CaC-22518/">Link</a>
+
+</p>
 
 ## Descripción
 
