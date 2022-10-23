@@ -15,6 +15,9 @@ Este repositorio contiene el código fuente de la página web del curso de Codo 
 Breve descripción:
 Es una página estilo one-page que además cuenta con una página separada donde se puede ver la simulación de un catálogo de vehículos que se encuentran a la venta con una serie de filtros para poder encontrar el vehículo deseado.
 
+
+![img.png](ScreensReader/index.png)
+
 - Página principal:
  cuenta con las siguientes secciones:
   - Hero
@@ -44,6 +47,22 @@ Es una página estilo one-page que además cuenta con una página separada donde
   - Google Fonts (Poppins para la pagina en general y Cinzel para el navbar)
 
 
+- Navbar con menú desplegable para dispositivos móviles.
+
+![img.png](ScreensReader/navbar-mobile.png)
+
+
+- El catálogo filtra vehículos mientras se escribe en el input de búsqueda.
+
+![img_1.png](ScreensReader/catalogo.png)
+
+
+- Se muestran iframes que contienen videos de youtube en la sección vehículos.
+
+![img.png](ScreensReader/iframe.png)
+
+
+
 - Animaciones tanto en la página principal como en la página de catálogo.
 
 
@@ -51,9 +70,6 @@ Es una página estilo one-page que además cuenta con una página separada donde
 
 
 - Se utilizan tanto flex como grid para el diseño de la página.
-
-
-- Se muestran iframes que contienen videos de youtube en la sección vehículos.
 
 
 - El formulario de contacto cuenta con validaciones mediante JavaScript.
@@ -65,9 +81,3 @@ Es una página estilo one-page que además cuenta con una página separada donde
 - Se utilizan media queries para el manejo de los breakpoints.
 
 
-- El navbar cuenta con un menú desplegable para los dispositivos móviles.
-![img.png](ScreensReader/img.png)
-
-
-- El catalogo filtra los vehículos mientras se escribe en el input de búsqueda.
-![img_1.png](ScreensReader/img_1.png)
