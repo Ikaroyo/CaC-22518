@@ -95,14 +95,14 @@ Web: <a href="https://ikaroyo.github.io/CaC-22518/">Link</a>
 </p>
 
 
-## Realtime Database de Firebase
+## API
   
 <p align="center">
     <a href="https://vehiculos-2b1d3-default-rtdb.firebaseio.com/vehiculos.json">Link</a>   
 </p>
 
-    - Se creó una base de datos de más de 7000 vehículos y
-    se utiliza para guardar los datos utilizados en el catalogo.
+    - Se creó una base de datos json de más de 2000 vehículos y
+    luego se incluyo como respuesta en el servicio Firebase Database Realtime.
   
 ## Otras características
 
