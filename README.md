@@ -101,7 +101,7 @@ Web: <a href="https://ikaroyo.github.io/CaC-22518/">Link</a>
     <a href="https://vehiculos-2b1d3-default-rtdb.firebaseio.com/vehiculos.json">Link</a>   
 </p>
 
-    - Se creó una base de datos json de más de 2000 vehículos y
+    - Se creó una base de datos en formato json de más de 2700 vehículos y
     luego se incluyo como respuesta en el servicio Firebase Database Realtime.
   
 ## Otras características
